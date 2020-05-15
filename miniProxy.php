@@ -35,7 +35,7 @@ $startURL = "";
 $landingExampleURL = "https://example.net";
 
 /****************************** END CONFIGURATION ******************************/
-
+ob_end_clean();
 ob_start("ob_gzhandler");
 
 if (version_compare(PHP_VERSION, "5.4.7", "<")) {
